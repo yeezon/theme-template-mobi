@@ -1,0 +1,49 @@
+
+/* 全局样式 */
+
+html {
+  user-select: none;  /* 禁止长按链接与图片弹出菜单 */
+
+  /* 触摸动作也经常用于完全解决由支持双击缩放手势引起的点击事件的延迟 */
+  /* 不影响后代（除 body） */
+  /* 效果不大，暂时去掉 */
+  /*touch-action: manipulation;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--color);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background-color: var(--backgroundColor);
+}
+
+a {
+  color: #4685ee;
+  text-decoration: none;
+}
+
+a:active {
+  color: #1d90e6;
+}
+
+a,
+img {
+  -webkit-touch-callout: none;  /* 禁止长按链接与图片弹出菜单 */
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}

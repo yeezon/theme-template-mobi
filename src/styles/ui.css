@@ -1,0 +1,46 @@
+
+/* 重置第三方库样式 */
+
+body .yu-btn--primary {
+  background-color: #fb544e;
+  border-color: #fb544e;
+}
+
+body .yu-switch.i-on {
+    background-color: #fb544e;
+}
+
+body .yu-area_picker-bar_area > span.i-active {
+  color: #fb544e;
+}
+
+body .yu-area_picker .yu-area_picker-item.i-active {
+    color: #fb544e;
+}
+
+body .yu-btn:active {
+  color: #fb544e;
+  border-color: #fb544e;
+}
+
+body .yu-btn--primary:active {
+  color: #fff;
+  background-color: #dd6161;
+  border-color: #dd6161;
+}
+
+body .yu-btn--text {
+    color: #fb544e;
+}
+
+body .yu-btn--text:active {
+    color: #fb544e;
+}
+
+body .yu-nav_bar-btn {
+  color: #9e9e9e;
+}
+
+body .yu-nav_bar-btn:active {
+  color: #9e9e9e;
+}

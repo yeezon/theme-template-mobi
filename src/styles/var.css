@@ -1,0 +1,52 @@
+
+/* 全局变量 */
+
+/* 0 的时候用 0px，不然 calc 计算时不会自动转换类型，导致计算出错 */
+
+:root {
+  --statusBar: 0px;
+  --navBar: 45px;
+  --tabBar: 50px;
+  --homeIndicator: 0px;
+
+  --color: #333; /* 苹果官网 是 #333 */
+  --statusBarBackgroundColor: #fff;
+  --borderColor: #d5d5d5;
+  --backgroundColor: #f6f4f9;
+
+  --1px: .5px;
+  --100vh: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --color: #fff;
+    --statusBarBackgroundColor: #222;
+    --borderColor: #d5d5d5;
+    --backgroundColor: #222;
+  } */
+}
+
+/* iOS 11.0 ~ 11.2 */
+@supports (bottom: constant(safe-area-inset-bottom)) {
+  :root {
+    --statusBar: constant(safe-area-inset-top);
+    --homeIndicator: constant(safe-area-inset-bottom);
+  }
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+  :root {
+    --statusBar: env(safe-area-inset-top);
+    --homeIndicator: env(safe-area-inset-bottom);
+  }
+}
+
+
+
+/* 方便开发测试 */
+
+/* :root {
+  --statusBar: 20px;
+  --homeIndicator: 34px;
+} */
